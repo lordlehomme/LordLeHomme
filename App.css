@@ -1,0 +1,11 @@
+@keyframes cursorGlow {
+  0% { background-color: #ff0000; }
+  50% { background-color: #00ff00; }
+  100% { background-color: #0000ff; }
+}
+
+.glowingCursor {
+  cursor: pointer;
+  transition: background-color 1.6s;
+  animation: cursorGlow 1.6s infinite;
+}
