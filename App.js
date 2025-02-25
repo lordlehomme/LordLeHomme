@@ -11,6 +11,33 @@ var l_lang;
 
 import React from 'react';
 import {Text, View} from 'react-native';
+import { View, StyleSheet } from 'react-native';
+
+const NavigationBar = () => {
+  return (
+    <View style={styles.navBar}>
+      {/* Navigation items go here */}
+    </View>
+  );
+};
+
+const styles = StyleSheet.create({
+  navBar: {
+    height: 60,
+    backgroundColor: 'transparent',
+    borderBottomWidth: 1,
+    borderColor: 'rgba(255, 255, 255, 0.3)',
+    transition: 'background-color 2.7s',
+    animation: 'glow 2.7s infinite',
+  },
+  '@keyframes glow': {
+    '0%': { backgroundColor: '#ff0000' },
+    '50%': { backgroundColor: '#00ff00' },
+    '100%': { backgroundColor: '#0000ff' },
+  },
+});
+
+export default NavigationBar;
 
 const LordLeHomme = () => {
   return (
