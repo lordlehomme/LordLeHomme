@@ -10,7 +10,7 @@
   animation: cursorGlow 1.6s infinite;
 }
 
-#Gateway {
+.button {
   font-size: 18px;
             color: white;
             background: transparent;
@@ -22,7 +22,7 @@
             overflow: hidden;
 }
 
-#Gateway ::before {
+.button::before {
   content: '';
             position: absolute;
             top: -50%;
@@ -36,7 +36,7 @@
             transition: all 0.5s ease;
 }
 
-#Gateway:hover::before {
+.button:hover::before {
   top: 0;
             left: 0;
             width: 100%;
