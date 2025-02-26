@@ -1,5 +1,4 @@
-import { createRoot } from 'node_modules/react-dom/client';
-import React from 'node_modules/react';
+import React from 'react';
 import { View, Text, TouchableOpacity, StyleSheet, Animated, Easing } from 'node_modules/react-native';
 
 var l_lang;
