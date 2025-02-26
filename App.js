@@ -1,16 +1,13 @@
-// Variables used by Scriptable.
-// These must be at the very top of the file. Do not edit.
-// icon-color: brown; icon-glyph: magic;
-var l_lang;
-  if (navigator.userLanguage) // Explorer
-    l_lang = navigator.userLanguage;
-  else if (navigator.language) // FF
-    l_lang = navigator.language;
-  else
-    l_lang = "en";
+import { createRoot } from 'node_modules/react-dom/client';
+import React from 'node_modules/react';
+import { View, Text, TouchableOpacity, StyleSheet, Animated, Easing } from 'node_modules/react-native';
 
-import React from 'react';
-import { View, Text, TouchableOpacity, StyleSheet, Animated, Easing } from 'react-native';
+var l_lang;
+ if (navigator.userLanguage)
+  l_lang = navigator.userLanguage;
+ else if (navigator.userLanguage)
+  l_lang = navigator.language;
+ else l_lang = "en";
 
 const navBar = () => {
   return (

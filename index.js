@@ -1,7 +1,4 @@
-// Variables used by Scriptable.
-// These must be at the very top of the file. Do not edit.
-// icon-color: deep-blue; icon-glyph: magic;
-import { createRoot } from 'react-dom/client';
+import { createRoot } from 'node_modules/react-dom/client';
 
 // Clear the existing HTML content
 document.body.innerHTML = '<div id="app"></div>';
