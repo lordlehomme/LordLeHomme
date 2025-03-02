@@ -1,10 +1,11 @@
+// webpack.config.js
 const path = require('path');
 
 module.exports = {
-  entry: './src/index.js', // Adjust this path to your entry file
+  entry: './src/index.js',
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist'), // Output directory
+    path: path.resolve(__dirname, 'dist')
   },
   module: {
     rules: [
@@ -12,9 +13,13 @@ module.exports = {
         test: /\.js$/,
         exclude: /node_modules/,
         use: {
-          loader: 'babel-loader',
-        },
+          loader: 'babel-loader'
+        }
       },
-    ],
-  },
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader']
+      }
+    ]
+  }
 };
