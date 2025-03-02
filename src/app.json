@@ -1,4 +1,7 @@
 {
     "name": "LordLeHomme",
-    "displayName": "Lord Le Homme"
+    "displayName": "Lord Le Homme",
+    "version": "1.0.0",
+    "author": "Nikita Fedosovs",
+    "licence": "MIT"
   }
