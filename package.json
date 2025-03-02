@@ -9,7 +9,8 @@
       "test": "echo \"Error: no test specified\" && exit 1"
     },
     "dependencies": {
-      "your-dependencies": "version"
+      "react": "19.0.0",
+      "react-dom": "19.0.0"
     },
     "devDependencies": {
       "webpack": "^5.0.0",
