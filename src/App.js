@@ -1,12 +1,7 @@
 import React from 'react';
-import { View, Text, TouchableOpacity, StyleSheet, Animated, Easing } from 'node_modules/react-native';
+import { View, Text, TouchableOpacity, StyleSheet, Animated, Easing } from 'react-native';
 
-var l_lang;
- if (navigator.userLanguage)
-  l_lang = navigator.userLanguage;
- else if (navigator.userLanguage)
-  l_lang = navigator.language;
- else l_lang = "en";
+const l_lang = navigator.language || "en";
 
 const styles = StyleSheet.create({
   '@keyframes glow': {
@@ -24,6 +19,7 @@ const LordLeHomme = () => {
         justifyContent: 'center',
         alignItems: 'center',
       }}>
+      <Text>Welcome to LordLeHomme</Text>
     </View>
   );
 };
