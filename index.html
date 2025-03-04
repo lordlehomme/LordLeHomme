@@ -14,19 +14,25 @@
 <body>
     <div id="root"></div>
     <script type="text/babel">
+        function PaymentGateway = () => {
+            return (
+                <>
+                <a class="button" href="https://wise.com/pay/business/lordlehomme">Buy</a>
+                </>
+            );
+        };
         const App = () => {
             return (
                 <div>
                     <h1>Lord Le Homme</h1>
                     <p>My name is Lord Le Homme and I am a software engineer.</p>
-                    <a class="button" href="https://wise.com/pay/business/lordlehomme" style="text-decoratione: none">About</a>
                 </div>
+                <PaymentGateway/>
             );
         };
-
         const container = document.getElementById('root');
         const root = ReactDOM.createRoot(container);
-        root.render(<App />);
+        root.render(<App/>);
     </script>
 </body>
 </html>
